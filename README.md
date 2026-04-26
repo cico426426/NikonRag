@@ -79,13 +79,27 @@ RERANK_TOP_N=6
 USE_RERANK=false
 ```
 
-### 3) Build Index
+### 3) Download Manual (Official Source)
+
+請勿將相機手冊 PDF 直接上傳到公開 GitHub。  
+請從 Nikon 官方下載中心自行下載後放到 `data/uploads/`：
+
+- Z 7II（繁體中文）: https://downloadcenter.nikonimglib.com/zh-tw/products/558/Z_7II.html
+- Nikon Download Center 首頁: https://downloadcenter.nikonimglib.com/
+
+例如下載後放入：
+
+```text
+data/uploads/Z7IIZ6IIRM_(Tc)10.pdf
+```
+
+### 4) Build Index
 
 ```bash
 python3 -m src.build_index --pdf "data/uploads/your_manual.pdf"
 ```
 
-### 4) Ask (CLI)
+### 5) Ask (CLI)
 
 ```bash
 python3 -m src.query "如何格式化記憶卡？"
@@ -97,7 +111,7 @@ python3 -m src.query "如何格式化記憶卡？"
 python3 -m src.query "如何設定自動對焦？" --source-file "/abs/path/to/manual.pdf"
 ```
 
-### 5) Run UI
+### 6) Run UI
 
 ```bash
 streamlit run src/frontend/streamlit_app.py
