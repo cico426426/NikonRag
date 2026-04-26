@@ -144,6 +144,7 @@ def save_uploaded_file(uploaded_file, target_dir: Path) -> Path:
 
 def citation_to_dict(c: Citation) -> dict[str, str | int]:
     return {
+        "citation_id": c.citation_id,
         "source_file": c.source_file,
         "source_filename": c.source_filename,
         "page": c.page,
@@ -199,11 +200,11 @@ with col_chat:
     with st.expander("快速來源跳轉（最新回應）", expanded=False):
         if st.session_state.latest_citations:
             quick_cols = st.columns(2, gap="medium")
-            for cite_idx, c in enumerate(st.session_state.latest_citations, start=1):
-                label = f"[{cite_idx}] {c['source_filename']} p.{c['page']}"
-                col = quick_cols[(cite_idx - 1) % 2]
+            for list_idx, c in enumerate(st.session_state.latest_citations, start=1):
+                label = f"[C{c['citation_id']}] {c['source_filename']} p.{c['page']}"
+                col = quick_cols[(list_idx - 1) % 2]
                 with col:
-                    if st.button(label, key=f"quick_cite_{cite_idx}_{c['chunk_id']}_{c['page']}"):
+                    if st.button(label, key=f"quick_cite_{list_idx}_{c['citation_id']}_{c['chunk_id']}_{c['page']}"):
                         st.session_state.selected_citation = c
                         st.session_state.scroll_to_pdf = True
         else:
@@ -218,9 +219,9 @@ with col_chat:
                 citations = msg.get("citations", [])
                 if msg["role"] == "assistant" and citations:
                     with st.expander("來源", expanded=False):
-                        for cite_idx, c in enumerate(citations, start=1):
-                            label = f"[{cite_idx}] {c['source_filename']} p.{c['page']} ({c['chunk_type']})"
-                            if st.button(label, key=f"msg_{msg_idx}_cite_{cite_idx}_{c['chunk_id']}_{c['page']}"):
+                        for list_idx, c in enumerate(citations, start=1):
+                            label = f"[C{c['citation_id']}] {c['source_filename']} p.{c['page']} ({c['chunk_type']})"
+                            if st.button(label, key=f"msg_{msg_idx}_cite_{list_idx}_{c['citation_id']}_{c['chunk_id']}_{c['page']}"):
                                 st.session_state.selected_citation = c
                                 st.session_state.scroll_to_pdf = True
                             st.markdown(

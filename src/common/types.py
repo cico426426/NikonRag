@@ -5,6 +5,7 @@ from dataclasses import dataclass
 
 @dataclass
 class Citation:
+    citation_id: int
     source_file: str
     source_filename: str
     page: int

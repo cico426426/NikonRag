@@ -17,9 +17,9 @@ def main() -> None:
     print("\nAnswer:\n")
     print(result.answer)
     print("\nCitations:\n")
-    for idx, citation in enumerate(result.citations, start=1):
+    for citation in result.citations:
         print(
-            f"[{idx}] {citation.source_filename} p.{citation.page} ({citation.chunk_type})\n"
+            f"[C{citation.citation_id}] {citation.source_filename} p.{citation.page} ({citation.chunk_type})\n"
             f"    {citation.quote}\n"
         )
 

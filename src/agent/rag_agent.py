@@ -65,7 +65,7 @@ class RagAgent:
         return "\n\n".join(parts)
 
     def _collect_citations(self, docs: list[Document], answer: str) -> list[Citation]:
-        cited_ids = {int(n) for n in re.findall(r"\[C(\d+)\]", answer)}
+        cited_ids = self._extract_cited_ids(answer)
         if not cited_ids:
             cited_ids = set(range(1, min(len(docs), 3) + 1))
 
@@ -82,6 +82,7 @@ class RagAgent:
             if start_page == end_page:
                 citations.append(
                     Citation(
+                        citation_id=cid,
                         source_file=str(metadata.get("source_file", "")),
                         source_filename=str(metadata.get("source_filename", Path(str(metadata.get("source_file", ""))).name)),
                         page=start_page,
@@ -94,6 +95,7 @@ class RagAgent:
                 for page in [start_page, end_page]:
                     citations.append(
                         Citation(
+                            citation_id=cid,
                             source_file=str(metadata.get("source_file", "")),
                             source_filename=str(metadata.get("source_filename", Path(str(metadata.get("source_file", ""))).name)),
                             page=page,
@@ -103,6 +105,12 @@ class RagAgent:
                         )
                     )
         return citations
+
+    @staticmethod
+    def _extract_cited_ids(answer: str) -> set[int]:
+        # Support grouped citations like [C1, C2, C6], [C1、C2], and full-width brackets.
+        ids = {int(n) for n in re.findall(r"[Cc]\s*(\d+)", answer)}
+        return ids
 
     def _retrieve_documents(self, query: str, *, source_file: str | None) -> list[Document]:
         recalled = self.vector_index.retrieve_with_scores(query, k=self.recall_k, source_file=source_file)

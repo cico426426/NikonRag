@@ -23,8 +23,8 @@ def main() -> None:
         print("\nAnswer:\n")
         print(result.answer)
         print("\nCitations:\n")
-        for idx, citation in enumerate(result.citations, start=1):
-            print(f"[{idx}] {citation.source_filename} p.{citation.page} - {citation.quote}")
+        for citation in result.citations:
+            print(f"[C{citation.citation_id}] {citation.source_filename} p.{citation.page} - {citation.quote}")
 
 
 if __name__ == "__main__":
