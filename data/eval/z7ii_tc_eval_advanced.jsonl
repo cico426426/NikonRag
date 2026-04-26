@@ -1,0 +1,20 @@
+{"question":"這本參考說明書同時適用哪兩個機型？","reference":"本說明書同時適用於 Z 7II 和 Z 6II。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"手冊中提到相機支援哪些記憶卡類型？","reference":"本相機可使用 CFexpress（B 型）、XQD、SD、SDHC 和 SDXC 記憶卡。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"若要區分記憶卡種類，手冊可能使用哪些術語？","reference":"當需要區分不同類型記憶卡時，可能會使用「CFexpress 記憶卡」、「XQD 記憶卡」和「SD 記憶卡」等術語。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"手冊中的「預設設定」是什麼意思？","reference":"「預設設定」指的是在出廠時處於生效狀態的設定。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"說明書圖示中，D、A、0 分別代表什麼用途？","reference":"D 表示注意、A 表示小提示、0 表示本說明書中其他部分的參考頁碼。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"快速準備流程中，插入電池、插入記憶卡與安裝鏡頭分別參考哪幾頁？","reference":"想立即拍攝的準備流程中，插入電池為第 43 頁、插入記憶卡為第 45 頁、安裝鏡頭為第 50 頁。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"快速拍攝時，對焦與拍照按鍵操作順序是什麼？","reference":"先半按快門釋放按鍵進行對焦，再在不鬆開按鍵的情況下完全按下快門拍攝照片。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"包裝內容裡哪些配件與連線相關？","reference":"包裝內物品包含 HDMI/USB 線夾與 UC-E24 USB 線。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"手冊是否把記憶卡列為隨機配件？","reference":"包裝內物品段落明確標示「記憶卡需另行選購」。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"如果要下載韌體更新與 Nikon 軟體，手冊建議去哪裡？","reference":"可前往尼康下載中心下載韌體更新、NX Studio、其他尼康軟件與說明書，網址為 https://downloadcenter.nikonimglib.com/。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"手冊建議在使用相機前先閱讀哪一章？","reference":"為確保正確使用本相機，請務必閱讀「安全須知」（第 xxxvi 頁）。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"AF 區域模式除了選單外，還能用什麼按鍵組合快速切換？","reference":"在預設設定下，AF 區域模式可透過按住 Fn2 按鍵並旋轉副指令撥盤進行選擇。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"在哪些 AF 區域模式之外，對焦點可以手動定位？","reference":"在「自動區域 AF」、「自動區域 AF（人物）」和「自動區域 AF（動物）」以外的模式下，對焦點可使用副選擇器或多重選擇器定位。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"微細焦點 AF 的用途與限制是什麼？","reference":"微細焦點 AF 對焦區域小於單點 AF，適合精確對焦與靜止主體；其對焦速度可能比單點 AF 慢，且僅在相片模式且對焦模式為「單次 AF」時可用。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"短片模式下調整 ISO 感光度的操作方式是什麼？","reference":"短片模式可按住 S 按鍵並旋轉主指令撥盤調整 ISO 感光度。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"短片記錄時，ISO 感光度在哪種曝光模式下可調整？","reference":"短片記錄時的 ISO 感光度僅可在模式 M 下進行調整。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"短片模式中，如何在自動 ISO 與固定 ISO 之間切換？","reference":"在短片模式下，可按住 S 按鍵並旋轉副指令撥盤，在「ISO AUTO」（自動 ISO 啟用）與「ISO」（自動 ISO 停用）之間切換。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"白平衡中的「閃光」大約對應幾 K？","reference":"白平衡選項「閃光」約為 5400 K，適用於閃光燈攝影。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"白平衡的「選擇色溫」可設定的大致範圍是什麼？","reference":"白平衡的「選擇色溫」約可在 2500 K 至 10000 K 範圍內設定。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}
+{"question":"白平衡的「手動預設」有哪些取得方式？","reference":"手動預設可透過測量主體或光源的白平衡，或從現有相片複製白平衡。","source_file":"/home/cico426426/desktop/nikon_rag/data/uploads/Z7IIZ6IIRM_(Tc)10.pdf"}

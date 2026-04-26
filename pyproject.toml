@@ -1,0 +1,18 @@
+[project]
+name = "nikon-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dotenv>=0.9.9",
+    "datasets>=4.2.0",
+    "langchain-chroma>=1.1.0",
+    "langchain-google-genai>=2.1.0",
+    "pymupdf4llm>=1.27.2.3",
+    "ragas>=0.2.15",
+    "streamlit[pdf]>=1.56.0",
+    "langsmith[claude-agent-sdk]>=0.7.36",
+    "langchain-upstage>=0.7.7",
+    "protobuf==3.20.3",
+]
