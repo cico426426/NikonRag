@@ -19,6 +19,9 @@ class Settings:
     recall_k: int
     rerank_top_n: int
     use_rerank: bool
+    enable_image_descriptions: bool
+    image_max_per_page: int
+    image_min_bytes: int
 
 
 def _as_int(name: str, default: int) -> int:
@@ -54,4 +57,7 @@ def get_settings() -> Settings:
         recall_k=_as_int("RECALL_K", 30),
         rerank_top_n=_as_int("RERANK_TOP_N", 6),
         use_rerank=_as_bool("USE_RERANK", False),
+        enable_image_descriptions=_as_bool("ENABLE_IMAGE_DESCRIPTIONS", False),
+        image_max_per_page=_as_int("IMAGE_MAX_PER_PAGE", 1),
+        image_min_bytes=_as_int("IMAGE_MIN_BYTES", 12000),
     )

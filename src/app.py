@@ -38,6 +38,11 @@ class RagService:
             chunk_size=self.settings.chunk_size,
             chunk_overlap=self.settings.chunk_overlap,
             bridge_window=self.settings.bridge_window,
+            enable_image_descriptions=self.settings.enable_image_descriptions,
+            image_max_per_page=self.settings.image_max_per_page,
+            image_min_bytes=self.settings.image_min_bytes,
+            image_description_model=self.settings.gemini_model,
+            image_description_api_key=self.settings.gemini_api_key,
         )
         self.vector_index.add_documents(docs)
         return len(docs)

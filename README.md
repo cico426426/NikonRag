@@ -6,6 +6,7 @@
 ## Portfolio Highlights
 
 - 以 `pymupdf4llm` 解析 PDF，保留頁碼與來源檔 metadata。
+- 可選 multimodal ingestion：抽取頁面圖片並用 Gemini 產生描述，與文字 chunk 一起建立索引。
 - 使用 `RecursiveCharacterTextSplitter` 切塊，並補上 cross-page bridge chunks，降低段落跨頁斷裂造成的漏召回。
 - Chroma 向量索引 + Gemini Embedding，支援 `source_file` 條件過濾。
 - 兩階段檢索：向量召回 + 可選 Gemini rerank（失敗時 lexical/vector fallback）。
@@ -77,6 +78,9 @@ BRIDGE_WINDOW=250
 RECALL_K=30
 RERANK_TOP_N=6
 USE_RERANK=false
+ENABLE_IMAGE_DESCRIPTIONS=false
+IMAGE_MAX_PER_PAGE=1
+IMAGE_MIN_BYTES=12000
 ```
 
 ### 3) Download Manual (Official Source)
